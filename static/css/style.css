@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Playwrite AU QLD", cursive;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-style: oblique;
+}
+
+header{
+    background-image: url(./istockphoto-162515751-612x612.jpg);
+    height: fit-content;
+}
+
+.header-wrapper nav a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+
+}
+
+
+.header-wrapper nav{
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #ffffffcf;
+    padding: 15px;
+}
+
+.container{
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffffcf;
+}
+
+form{
+    width: 30%;
+    margin: 60px auto;
+}
+
+fieldset{
+    padding: 50px 50px;
+    background-image: url(./beautiful-gradient-spring-landscape_23-2148448598.avif);
+   
+}
+
+label{
+    font-size: smaller;
+    color: #ffff;
+
+}
+
+.dts{
+    color: #ffff;
+}
+legend{
+    font-size: small
+}
+.form{
+    display: flex;
+}
+
+
+.elements a{
+    text-decoration: none;
+    color:  #000000ce;
+    font-size: small;
+    background-color: rgba(91, 231, 239, 0.463);
+    border-radius: 20px;
+    padding: 10px;
+    width: 50%px;
+    height: 20px;
+}

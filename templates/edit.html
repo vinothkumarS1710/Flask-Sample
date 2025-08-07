@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block title %}Edit_User{% endblock %}
+
+{% block content %}
+<div class="reg">
+    <div>
+        <form action="{{url_for('update',name=data.Name)}}" method="post">
+            <fieldset>
+                <legend>Edit User</legend>
+                <label for="user_name">User_name</label><br>
+                <input type="text" id="user_name" name="user_name" value="{{data.Name}}"><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" value="{{data.Email}}"><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" value="{{data.Password}}"><br><br>
+                <label for="con_password">Confirm Password</label><br>
+                <input type="password" id="con_password" name="con_password" value="{{data.Confirm_Password}}"><br><br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

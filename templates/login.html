@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block title %}Sign in{% endblock %}
+
+{% block content %}
+<div class="form">
+    <form action="/home" method="post">
+    <fieldset>
+        <legend>Login :</legend>
+        <div class="elements">
+            <center>
+            <label for="user_name">User_name</label><br>
+            <input type="text" id="user_name" name="nme"><br><br>
+            <label for="pass">Password</label><br>
+            <input type="password" id="pass" name="pass"><br><br>
+            <!-- <a href="./login/sign_up">Sign Up</a> -->
+            <button type="submit">login</button>
+            <a href="/login/sign_up">Sign Up</a>
+        </center>
+        </div>
+               
+    </fieldset>
+
+</form>
+
+</div>
+{% endblock %}

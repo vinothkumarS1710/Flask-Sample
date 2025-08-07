@@ -1,0 +1,27 @@
+{%extends 'index.html'%}
+
+{% block title %}Users{% endblock %}
+
+{% block content %}
+<h3>Users_Details :</h3><br>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Confirm Password</th>
+        <th>Edit Details</th>
+        <th>Delete</th>
+    </tr>
+    {% for row in datas %}
+    <tr>
+        <td>{{row.Name}}</td>
+        <td>{{row.Email}}</td>
+        <td>{{row.Password}}</td>
+        <td>{{row.Confirm_Password}}</td>
+        <td><a href="{{url_for('get_edit', name=row.Name)}}">⌨</a></td>
+        <td><a href="{{url_for('remove', name=row.Name)}}" onclick="alert('Are you sure!');">❌</a></td>
+    </tr>
+    {% endfor %}
+</table>    
+{% endblock %}

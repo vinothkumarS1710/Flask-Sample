@@ -1,0 +1,23 @@
+{% extends 'index.html'%} 
+
+{% block title %}Users_Details{% endblock %} 
+
+{% block content %}
+
+    <div class="dts">
+        <h3><u>Users_Details : </u></h3><br /><br />
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Password</th>
+            </tr>
+            {% for data in rows %}
+            <tr>
+                <td>{{ data.Name }}</td>
+                <td>{{data.Password}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+{% endblock %}

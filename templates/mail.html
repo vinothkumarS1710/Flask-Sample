@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail</title>
+</head>
+<body>
+    <form action="./send" method="post">
+        <label for="mail_id">From : </label>
+        <input type="email" id="mail_id" name="mail_id" required><br><br>
+        <label for="receiver">To : </label>
+        <input type="email" name="receiver" id="receiver" required><br><br>
+        <label for="message">Msg : </label>
+        <textarea name="message" id="message" placeholder="Type the messages"></textarea><br><br>
+        <input type="submit" value="Send">
+    </form>
+
+</body>
+</html>
